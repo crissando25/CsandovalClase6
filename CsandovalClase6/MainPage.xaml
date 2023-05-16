@@ -46,7 +46,7 @@
                                 <Label x:Name="lbltbl_jz_grupo_t" Text="{Binding tbl_jz_grupo_t}" Grid.Row="0" Grid.Column="2" ></Label>
                                 <Label x:Name="lblObservaciones" Text="{Binding tbl_g_observaciones}" Grid.Row="0" Grid.Column="3"></Label>
                                 
-                                <Button x:Name="btnactualiza" Grid.Row="0" Grid.Column="4" BackgroundColor="White"/>
+                                <Button x:Name="btnActualizar" Grid.Row="0" Grid.Column="4" BackgroundColor="White"/>
                                 <Button x:Name="btnEliminar" Grid.Row="0" Grid.Column="5" BackgroundColor="White"/>
                            </Grid>
                         </StackLayout>

@@ -36,5 +36,12 @@ namespace CsandovalClase6
         {
             await Navigation.PushAsync(new Registrar());
         }
+        private async void BtnActualizar_Clicked(object sender, EventArgs e)
+        {            
+            await Navigation.PushAsync(new ActualizarRegistro());
+           
+        }
     }
+
+    
 }

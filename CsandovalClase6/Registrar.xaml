@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="CsandovalClase6.Registrar"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="REGISTRO DE AREAS" HorizontalTextAlignment="Center" FontSize="28"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="INgrese ID" FontSize="18" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtTbl_jz_id" Placeholder="ID" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Ingrese su nombre" FontSize="Medium" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txttbl_jz_nombre" Placeholder="Nombre" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Ingrese Grupo" FontSize="Medium" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txttbl_jz_grupo_t" Placeholder="Grupo" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="Ingrese Grupo" FontSize="Medium" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txttbl_g_observaciones " Placeholder="Observaciones" Grid.Row="3" Grid.Column="1"/>
+                
+                <Button Grid.Row="4" Grid.Column="0" Text="Registrar" x:Name="btnInsertar" Clicked="btnRegistrar_Clicked" ></Button>
+                <Button Grid.Row="4" Grid.Column="1" Text="Regresar" x:Name="btnRegresar" Clicked="btnRegresar_Clicked"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

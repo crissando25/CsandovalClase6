@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CsandovalClase6.MainPage">
+
+<StackLayout>
+        <Frame BackgroundColor="Blue" Padding="24" CornerRadius="0">
+            <Label Text="TAREA  SEMANA 6" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+       </Frame>
+        <Grid>
+            <Grid.RowDefinitions >
+                <RowDefinition Height="25" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="ID" FontSize="15" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="NOMBRE" FontSize="18" Grid.Row="0" Grid.Column="1"/>
+            <Label Text="GRUPO" FontSize="18" Grid.Row="0" Grid.Column="2"/>
+            <Label Text="OBSERVACION" FontSize="18" Grid.Row="0" Grid.Column="3"/>
+       </Grid>
+        <Label Text="___________________________________________________" />
+        <Label Text="EL METODO GET" FontSize="20" HorizontalTextAlignment="Center"></Label>
+        <ListView x:Name="lista">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Label x:Name="lblid" Text="{Binding id}" Grid.Row="0" Grid.Column="0" ></Label>
+                                <Label x:Name="lblnombre" Text="{Binding nombre}" Grid.Row="0" Grid.Column="1" ></Label>
+                                <Label x:Name="lbltbl_jz_grupo_t" Text="{Binding tbl_jz_grupo_t}" Grid.Row="0" Grid.Column="2" ></Label>
+                                <Label x:Name="lblObservaciones" Text="{Binding tbl_g_observaciones}" Grid.Row="0" Grid.Column="3"></Label>
+                                
+                                <Button x:Name="btnactualiza" Grid.Row="0" Grid.Column="4" BackgroundColor="White"/>
+                                <Button x:Name="btnEliminar" Grid.Row="0" Grid.Column="5" BackgroundColor="White"/>
+
+                            </Grid>
+
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="btnRegistro" Text="Ingresar datos" Clicked="btnRegistro_Clicked"/>
+    </StackLayout>
+</ContentPage>

@@ -48,9 +48,7 @@
                                 
                                 <Button x:Name="btnactualiza" Grid.Row="0" Grid.Column="4" BackgroundColor="White"/>
                                 <Button x:Name="btnEliminar" Grid.Row="0" Grid.Column="5" BackgroundColor="White"/>
-
-                            </Grid>
-
+                           </Grid>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
